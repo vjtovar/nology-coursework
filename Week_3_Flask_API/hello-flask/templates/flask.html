@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Treasure Hunt</title>
+    <link
+      rel="stylesheet"
+      href="{{ url_for('static', filename='styles.css') }}"
+    />
+    <script
+      type="text/javascript"
+      src="{{ url_for('static', filename='treasurehunt.js') }}"
+    ></script>
+  </head>
+  <body>
+    <main>
+      <h1>TREASURE HUNT</h1>
+      <img
+        src="https://bit.ly/34YKtvL"
+        alt="image of a treasure map"
+        width="400px"
+      />
+      <h2>RULES:</h2>
+      <ul class="list-group">
+        <li>Rule 1: Click the boxes to reveal what's on the map!</li>
+        <li>Rule 2: If you get an ( X ) it is a miss.</li>
+        <li>Rule 3: If you get a Skull, you die!</li>
+        <li>
+          Rule 4: If you get a Trophy, you found the treasure and win the game!
+        </li>
+        <li>Rule 5: You only have 3 chances!</li>
+      </ul>
+      <div id="gameboard">
+        <table>
+          <tr>
+            <td id="0" onclick="treasure(0)">?</td>
+            <td id="1" onclick="treasure(1)">?</td>
+            <td id="2" onclick="treasure(2)">?</td>
+          </tr>
+          <tr>
+            <td id="3" onclick="treasure(3)">?</td>
+            <td id="4" onclick="treasure(4)">?</td>
+            <td id="5" onclick="treasure(5)">?</td>
+          </tr>
+          <tr>
+            <td id="6" onclick="treasure(6)">?</td>
+            <td id="7" onclick="treasure(7)">?</td>
+            <td id="8" onclick="treasure(8)">?</td>
+          </tr>
+        </table>
+      </div>
+      <button type="button" onclick="location.reload()">Restart Game</button>
+    </main>
+  </body>
+</html>
