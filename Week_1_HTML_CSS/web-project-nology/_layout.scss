@@ -1,0 +1,108 @@
+.get-device {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+    img, h1, h2, h3, h4 {
+        padding: 30px 30px;
+    }
+    
+    h1 {
+        font-family: $font-display;
+        font-size: 50px;
+        font-weight: bolder;   
+    }
+    
+    h2 {
+        font-size: 40px;
+    }
+    
+    h1, h3 {
+        color: $color-secondary;
+    } 
+    
+    h3 {
+        font-size: 35px;
+    }
+    
+    h4 {
+        font-size: 25px;
+        font-weight: lighter;
+    }
+
+    h4:hover {
+        font-weight: bold;
+        text-transform: uppercase;
+    }
+}
+
+.sign-up {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 30px 20px;
+
+    h2 {
+        font-size: 37px;
+        font-weight: normal;
+    }
+    
+    h3 {
+        font-size: 28px;
+        font-weight: normal;
+    }
+}
+
+.bold {
+    font-weight: bold;
+}
+
+.italic {
+    font-style: italic;
+}
+
+.penguin-one,
+.penguin-three {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    padding: 40px 40px;
+}
+
+.penguin-two,
+.penguin-four {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    padding: 40px 40px;
+}
+
+footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    padding: 70px 0;
+    margin: auto;
+    background-color: $background-color-secondary;
+    
+    a {
+        padding: 20px 20px;
+        font-weight: bold;
+        font-size: 30px;
+        background-color: $background-color-secondary; 
+    }
+}
+
+@media screen and (max-width: 768px) {
+    body {
+        width: 100%;
+    }
+}

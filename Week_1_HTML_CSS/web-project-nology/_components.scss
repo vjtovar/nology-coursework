@@ -1,0 +1,45 @@
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 50px 70px;
+    width: 100%;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.logo {
+    font-family: $font-icon;
+    font-size: 100px;
+}
+
+.login-button {
+    border: 2px solid $color-primary;
+    border-radius: 7px;
+    text-align: center;
+    padding: 20px 50px;
+}
+
+.login-button:active {
+        text-decoration: underline;
+        color: green;
+    }
+
+
+.button {
+    border: 2px solid $color-primary;
+    background-color: $color-primary;
+    color: $color-white;
+    border-radius: 7px;
+    text-align: center;
+    padding: 20px 90px;
+    font-weight: bolder;
+    font-size: 30px;
+    margin: 60px;
+}
+
+
+
+
+

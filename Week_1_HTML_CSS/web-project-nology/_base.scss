@@ -1,0 +1,25 @@
+@import url('https://fonts.googleapis.com/css2?family=Bangers&family=Nunito:wght@700&family=Open+Sans:ital,wght@0,400;0,700;1,300&display=swap');
+
+$font-body: "Open Sans", sans-serif;
+$font-display: "Nunito", cursive;
+$font-icon: "Bangers", sans-serif;
+
+$color-primary: #342c5c;
+$color-secondary: #38b9f0;
+$color-white: #fffafa;
+$background-color-primary: #fffffa;
+$background-color-secondary: #ffffe0;
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: $font-body;
+    color: $color-primary;
+    background-color: $background-color-primary;
+}
+
+a:link,
+a:visited {
+    text-decoration: none;
+}

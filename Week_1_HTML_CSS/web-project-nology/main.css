@@ -1,0 +1,153 @@
+@import url("https://fonts.googleapis.com/css2?family=Bangers&family=Nunito:wght@700&family=Open+Sans:ital,wght@0,400;0,700;1,300&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Open Sans", sans-serif;
+  color: #342c5c;
+  background-color: #fffffa;
+}
+
+a:link,
+a:visited {
+  text-decoration: none;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 50px 70px;
+  width: 100%;
+  font-size: 30px;
+  font-weight: bold;
+}
+
+.logo {
+  font-family: "Bangers", sans-serif;
+  font-size: 100px;
+}
+
+.login-button {
+  border: 2px solid #342c5c;
+  border-radius: 7px;
+  text-align: center;
+  padding: 20px 50px;
+}
+
+.login-button:active {
+  text-decoration: underline;
+  color: green;
+}
+
+.button {
+  border: 2px solid #342c5c;
+  background-color: #342c5c;
+  color: #fffafa;
+  border-radius: 7px;
+  text-align: center;
+  padding: 20px 90px;
+  font-weight: bolder;
+  font-size: 30px;
+  margin: 60px;
+}
+
+.get-device {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.get-device img, .get-device h1, .get-device h2, .get-device h3, .get-device h4 {
+  padding: 30px 30px;
+}
+.get-device h1 {
+  font-family: "Nunito", cursive;
+  font-size: 50px;
+  font-weight: bolder;
+}
+.get-device h2 {
+  font-size: 40px;
+}
+.get-device h1, .get-device h3 {
+  color: #38b9f0;
+}
+.get-device h3 {
+  font-size: 35px;
+}
+.get-device h4 {
+  font-size: 25px;
+  font-weight: lighter;
+}
+.get-device h4:hover {
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.sign-up {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 30px 20px;
+}
+.sign-up h2 {
+  font-size: 37px;
+  font-weight: normal;
+}
+.sign-up h3 {
+  font-size: 28px;
+  font-weight: normal;
+}
+
+.bold {
+  font-weight: bold;
+}
+
+.italic {
+  font-style: italic;
+}
+
+.penguin-one,
+.penguin-three {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+  padding: 40px 40px;
+}
+
+.penguin-two,
+.penguin-four {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+  padding: 40px 40px;
+}
+
+footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+  padding: 70px 0;
+  margin: auto;
+  background-color: #ffffe0;
+}
+footer a {
+  padding: 20px 20px;
+  font-weight: bold;
+  font-size: 30px;
+  background-color: #ffffe0;
+}
+
+@media screen and (max-width: 768px) {
+  body {
+    width: 100%;
+  }
+}
