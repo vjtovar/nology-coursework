@@ -1,0 +1,43 @@
+nav {
+    height: 10vh;
+    background-color: $color-primary;
+    padding: 0 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-family: $font-display;
+    font-size: 20px;
+    color: $color-white;
+}
+
+.button {
+    display: block;
+    width: 100px;
+    background-color: $color-secondary;
+    text-align: center;
+    padding: 10px 20px;
+    border-radius: 10px;
+    color: $color-white;
+}
+
+div {
+    text-align: center;
+
+    h1 {
+        color: $color-primary;
+        font-size: 50px;
+    }
+
+    h2{
+        font-family: $font-display;
+        font-size: 25px;
+        margin: 20px 0;
+    }
+
+    a {
+        margin: 0 auto;
+    }
+}
