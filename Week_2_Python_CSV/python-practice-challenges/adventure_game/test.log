@@ -1,0 +1,6 @@
+2023-01-03 12:59:47,516 DEBUG    This is a Debug msg
+2023-01-03 12:59:47,516 INFO     This is a Info msg
+2023-01-03 12:59:47,516 WARNING  This is a Warning msg
+2023-01-03 12:59:47,516 ERROR    This is an Error msg
+2023-01-03 13:00:19,435 INFO     leaving game
+2023-01-03 13:00:19,436 INFO     Kicked off the island
