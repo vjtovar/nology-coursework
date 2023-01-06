@@ -1,0 +1,74 @@
+@import url("https://fonts.googleapis.com/css2?family=Bangers&family=Carter+One&family=Nunito:wght@700&family=Open+Sans:ital,wght@0,400;0,700;1,300&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.button-one {
+  border: 1px solid black;
+  background-color: black;
+  color: white;
+  text-align: center;
+  padding: 5px;
+  font-weight: normal;
+  margin: 10px;
+}
+
+.button-two {
+  border: 1px solid black;
+  background-color: white;
+  color: black;
+  text-align: center;
+  padding: 5px;
+  font-weight: normal;
+}
+
+a:link,
+a:visited {
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+  width: 300px;
+  height: 300px;
+}
+
+h1, p, a {
+  padding: 10px;
+}
+
+p, div {
+  padding-bottom: 40px;
+}
+
+h1 {
+  font-family: "Nunito", sans-serif;
+}
+
+p {
+  font-family: "Open Sans", sans-serif;
+  font-size: 15px;
+}
+
+a {
+  font-family: "Open Sans", sans-serif;
+  font-size: 13px;
+}
+
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+div {
+  width: 300px;
+  height: auto;
+  text-align: left;
+  background-color: white;
+  color: black;
+  border: 1px solid black;
+  margin: 40px 40px;
+}

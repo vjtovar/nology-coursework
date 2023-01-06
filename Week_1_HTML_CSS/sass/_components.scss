@@ -1,0 +1,23 @@
+.button-one {
+    border: 1px solid $primary-color;
+    background-color: $primary-color;
+    color: $secondary-color;
+    text-align: center;
+    padding: 5px;
+    font-weight: normal;
+    margin: 10px;
+}
+
+.button-two {
+    border: 1px solid $primary-color;
+    background-color: $secondary-color;
+    color: $primary-color;
+    text-align: center;
+    padding: 5px;
+    font-weight: normal;
+}
+
+a:link,
+a:visited {
+    text-decoration: none;
+}
