@@ -50,7 +50,7 @@ car = (4, "Gray ", True)
 if car[0] == 4 and car[1] == "Gray" and car[2]:
     print("gray sedan selected")
 car = namedtuple("Car", "doors color isAvailable")
-car = Car(4, "Gray", True)
+car = car(4, "Gray", True)
 
 if car.doors == 4 and car.color == "Gray" and car.isAvailable:
     print("Gray Sedan selected")
