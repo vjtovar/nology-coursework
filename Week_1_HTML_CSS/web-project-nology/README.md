@@ -8,7 +8,7 @@
 To cement these concepts (HTML, CSS, SCSS, Flex) a parenting coach app was built using HTML, SCSS, and Flexbox
 
 ### Specifications
-1. Use HTML, SCSS, and flex: Use flex to position your elements and SCSS to style the app
+1. Use HTML, SCSS, media queries and flex: Use flex to position your elements and SCSS to style the app. Use media queries to make the website responsive.
 
 <img width="1226" alt="Screenshot 2023-01-07 at 11 36 07 AM" src="https://user-images.githubusercontent.com/104322947/211167739-fc6ee9b6-c042-4d97-a65a-adf8b1abd7b9.png">
 
