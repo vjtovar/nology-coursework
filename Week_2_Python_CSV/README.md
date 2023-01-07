@@ -9,7 +9,7 @@ Python challenges for classes, OOP, entry points, named tuples, lists, tuples, d
 3. Use python to solve challenge questions
 
 ### Python Installation 
-1. Python3 - Download the latest version of python from the python site. To check Python version, run: python3 --version.
+1. Python3 - Download the latest version of python from the python site. run: brew install python3. This should also install pip3. To check Python version, run: python3 --version.
 2. pip3 - To check if pip3 is already installed, run: pip3 --version. The output should
 be similar to pip 22.2.1.
 
