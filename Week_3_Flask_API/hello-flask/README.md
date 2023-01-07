@@ -1,52 +1,33 @@
+# Flask
 
-➜  ~ nology
-➜  nology cd python-virtual-environments 
-➜  python-virtual-environments cd hello-flask 
-$  python3 -m venv env
-➜  hello-flask source env/bin/activate                   
+## Project: Intro to flask
 
-(env) ➜  hello-flask brew install pyenv
-==> Fetching pyenv
-==> Downloading https://ghcr.io/v2/homebrew/core/pyenv/manifests/2.3.9
-######################################################################## 100.0%
-==> Downloading https://ghcr.io/v2/homebrew/core/pyenv/blobs/sha256:b88344e260fdf2f955
-==> Downloading from https://pkg-containers.githubusercontent.com/ghcr1/blobs/sha256:b
-######################################################################## 100.0%
-==> Pouring pyenv--2.3.9.arm64_ventura.bottle.tar.gz
-🍺  /opt/homebrew/Cellar/pyenv/2.3.9: 979 files, 3.1MB
-==> Running `brew cleanup pyenv`...
-Disable this behaviour by setting HOMEBREW_NO_INSTALL_CLEANUP.
-Hide these hints with HOMEBREW_NO_ENV_HINTS (see `man brew`).
-(env) ➜  hello-flask pyenv
-pyenv 2.3.9
-Usage: pyenv <command> [<args>]
+### Overview
+A treasurehunt game built in HTML, CSS, JS, Python, and Flask
 
+### Specifications
+1. Install python
+2. Set up virtual environment
+3. Install pyenv
+4. Install flask
+5. Use flask to create http requests for different pages
 
-(env) ➜  hello-flask pyenv install 3.10.7
-python-build: use openssl@1.1 from homebrew
-python-build: use readline from homebrew
-Downloading Python-3.10.7.tar.xz...
--> https://www.python.org/ftp/python/3.10.7/Python-3.10.7.tar.xz
-Installing Python-3.10.7...
-python-build: use readline from homebrew
-python-build: use zlib from xcode sdk
-WARNING: The Python lzma extension was not compiled. Missing the lzma lib?
-Installed Python-3.10.7 to /Users/vjtovar/.pyenv/versions/3.10.7
+### Python Installation 
+1. Python3 - Download the latest version of python from the python site. run: brew install python3. This should also install pip3. To check Python version, run: python3 --version.
+2. pip3 - To check if pip3 is already installed, run: pip3 --version. The output should
+be similar to pip 22.2.1.
 
-(env) ➜  hello-flask pyenv local 3.10.7
-(env) ➜  hello-flask pyenv local
-3.10.7
-(env) ➜  hello-flask code .
-(env) ➜  hello-flask 
+### Virtual Environment Installation
+1. Install virtual env package: pip3 install virtualenv. Only needs to be done once, when first installing python.
+2. Make directory for env: mkdir flask-api && cd flask-api
+3. Create environment: python3 -m venv env
+4. Activate environment: source env/bin/activate. (env) indicates environment is active. 
+5. run: brew install pyenv. Only needs to be installed once. Check the version of pyenv, run: pyenv --version.
+6. If pyenv version not 3.10.7, run: pyenv install 3.10.7
+7. Change the local version to 3.10.7, run: pyenv local 3.10.7
+8. run: pyenv local to check the version of pyenv
+9. Install flask, run: pip3 install flask
+10. Create app.py and add imports
+11. run: export FLASK_APP=app.py
+12. run: flask --debug run, to start the server
 
-$ pip3 install flask
-(env) ➜  hello-flask export FLASK_APP=app.py
-(env) ➜  hello-flask flask run or do flask --debug run             
- * Serving Flask app 'app.py'
- * Debug mode: off
-WARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.
- * Running on http://127.0.0.1:5000
-                                                                               
-(env) ➜  hello-flask flask --debug run
- * Serving Flask app 'app.py'
- * Debug mode: on
