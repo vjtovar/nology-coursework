@@ -1,6 +1,6 @@
 # Flexbox-Challenge
 
-## Project: Intro to web
+## Project: Intro to flexbox
 
 ### Overview
 To cement the concept of flexbox a table was created using HTML, CSS, and flexbox.
