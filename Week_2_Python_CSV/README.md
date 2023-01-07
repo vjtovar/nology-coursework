@@ -39,7 +39,7 @@ for i in multi_dim:
     print(i)
 ``` 
 
-5. write a list comprehension that creates a new list with the square root of each number from the original list.
+1. Write a list comprehension that creates a new list with the square root of each number from the original list.
 
 ```
 old_list = [9,64,121,81, 169,225, 256, 1337]
@@ -50,7 +50,7 @@ new_list = reduce(lambda a,b: a+b, old_list)
 print(new_list)
 ```
 
-6. Write a function in Python that accepts a list of any length that contains a mix of non-negative integers and strings. The function should return a list with only the integers in the original list in the same order.
+1. Write a function in Python that accepts a list of any length that contains a mix of non-negative integers and strings. The function should return a list with only the integers in the original list in the same order.
 
 ```
 import sys
