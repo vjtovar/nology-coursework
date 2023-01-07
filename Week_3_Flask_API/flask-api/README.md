@@ -1,19 +1,38 @@
+# Flask-API
 
-## Commands for setting up env and flask api
-$ mkdir flask-api
-$ cd flask-api
-$ python3 -m venv env
-$ source env/bin/activate 
-$ code .
-$ pyenv local 3.10.7
-$ pyenv local
-$ pip3 install flask
-<!-- create app.py and add imports -->
-$ export FLASK_APP=app.py
-$ flask --debug run
-<!-- create file and add flask, python-dotenv, psycopg2 to top of file-->
-$ pip install -r requirements.txt
-$flask --debug run
+## Project: Intro to flask-api
+
+### Overview
+A Flask app using PostgreSQL with and API generated using Elephant SQL to connect to a database and write queries to pull in the data.
+
+### Specifications
+1. Install python
+2. Set up virtual environment
+3. Install pyenv
+4. Install flask
+5. Use flask to create http requests for different pages of application.
+
+### Python Installation 
+1. Python3 - Download the latest version of python from the python site. run: ```brew install python3```. This should also install pip3. To check Python version, run: ```python3 --version```.
+2. pip3 - To check if pip3 is already installed, run: ```pip3 --version```. The output should
+be similar to pip 22.2.1.
+
+### Virtual Environment Installation
+1. Install virtual env package: ```pip3 install virtualenv```. Only needs to be done once, when first installing python.
+2. Make directory for env: ```mkdir flask-api && cd flask-api```
+3. Create environment: ```python3 -m venv env```
+4. Activate environment: ```source env/bin/activate```. (env) indicates environment is active. 
+5. run: ```brew install pyenv```. Only needs to be installed once. Check the version of pyenv, run: ```pyenv --version```.
+6. If pyenv version not 3.10.7, run: ```pyenv install 3.10.7```
+7. Change the local version to 3.10.7, run: ```pyenv local 3.10.7```
+8. run: ```pyenv local``` to check the version of pyenv
+9. Install flask, run: ```pip3 install flask```
+10. Create app.py and add imports
+11. run: ```export FLASK_APP=app.py```
+12. run: ```flask --debug run```, to start the server
+13. Create requirements.txt file and add flask, python-dotenv, psycopg2 to top of file
+14. run: ```pip3 install -r requirements.txt```, to install flask, python-dotenv, psycopg2
+15. run: ```flask --debug run``` or add FLASK_APP=app, FLASK_DEBUG=1 to .env file to automatically have debugger on. This starts the server
 
 ## Notes for Postman and ElephantSQL
 Postman to add data, elephantsql to see data table
