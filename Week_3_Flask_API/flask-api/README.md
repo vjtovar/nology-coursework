@@ -82,6 +82,7 @@ Will return below
 <img width="854" alt="Screenshot 2023-01-07 at 2 12 11 PM" src="https://user-images.githubusercontent.com/104322947/211172545-8075056e-e615-4312-9357-a48e9bdc9e2e.png">
 
 
+
 ```
 @app.get("/api/room/<int:room_id>")
 SELECT * FROM "public"."rooms" in elephantsql
@@ -97,6 +98,7 @@ Will show result below by inputing room id above
 <img width="848" alt="Screenshot 2023-01-07 at 2 14 01 PM" src="https://user-images.githubusercontent.com/104322947/211172574-34454d34-f6e6-4f3f-abae-8cef33fbd8f6.png">
 
 
+
 ```
 @app.post("/api/temperature")
 "SELECT COUNT(*) FROM rooms;"
@@ -109,6 +111,7 @@ select body, raw, JSON and enter below to add random temp and dates to rooms by 
 ```
 
 <img width="848" alt="Screenshot 2023-01-07 at 2 17 24 PM" src="https://user-images.githubusercontent.com/104322947/211172590-0f8eb30d-2ea6-4201-9a46-19ee673de2c3.png">
+
 
 
 ```
