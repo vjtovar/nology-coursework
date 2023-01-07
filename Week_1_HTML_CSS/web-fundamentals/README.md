@@ -1,4 +1,4 @@
-# web-fundamentals
+# Web-Fundamentals
 
 ## Project: Intro to web
 
