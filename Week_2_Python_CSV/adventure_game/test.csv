@@ -1,9 +1,7 @@
 column1|column2|column3|column4
-2023-01-03 10:58:00,307 DEBUG    This is a Debug msg
-2023-01-03 10:58:00,308 INFO     This is a Info msg
-2023-01-03 10:58:00,308 WARNING  This is a Warning msg
-2023-01-03 10:58:00,308 ERROR    This is an Error msg
-2023-01-03 10:58:09,140 INFO     Entering game
-2023-01-03 10:58:16,744 INFO     Found treasure chest
-2023-01-03 10:58:26,865 INFO     Found useless boat, continue exploring
-2023-01-03 10:58:36,564 INFO     Player finds tools and survives island
+2023-01-03 12:59:47,516 DEBUG    This is a Debug msg
+2023-01-03 12:59:47,516 INFO     This is a Info msg
+2023-01-03 12:59:47,516 WARNING  This is a Warning msg
+2023-01-03 12:59:47,516 ERROR    This is an Error msg
+2023-01-03 13:00:19,435 INFO     leaving game
+2023-01-03 13:00:19,436 INFO     Kicked off the island
