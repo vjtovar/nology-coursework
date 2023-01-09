@@ -1,5 +1,12 @@
 # Grid-Challenge
 
+## Project: Intro to grid
+
+### Overview
+To cement the concept of grid a responsive grid was built with HTML, CSS, grid, and media queries
+
+### Specifications
+1. Use grid: Use grid to position images on the page.
 
 <img width="640" alt="Screenshot 2023-01-08 at 8 06 08 PM" src="https://user-images.githubusercontent.com/104322947/211239864-53560ecd-1172-4eb7-af03-509f45e642d7.png">
 
