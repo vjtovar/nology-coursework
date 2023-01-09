@@ -1,10 +1,9 @@
-/* * {
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    /* background-color: #F64488; */
-  /* } */
-
+    background-color: white;
+}
   
   /* navbar stylings */
   
@@ -47,129 +46,173 @@
     color: black;
   }
 
-  /* .container {
+  .container {
     width: 100%;
     max-width: 120rem;
     margin: auto;
-    padding: 0 1.5rem;
-} */
+    padding: 0 5rem;
+    padding-bottom: 3rem;
+}
 
   .grid-container {
     display: grid;
     grid-template-areas:
-    "condo-home cosy-home cottage-home cottage-home"
-    "condo-home play-house country-home pool-house"
-    "white-house white-house play-house  pool-house";
+    "condo cosy-home cottage-home"
+    "country-house country-house cottage-home"
+    "country-house country-house play-house"
+    "pool-house white-house white-house";
     grid-gap: 10px;
-    /* grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-template-rows: auto; */
+    justify-content: center;
   }
 
 
   .grid-container img {
     width: 100%;
     height: 100%;
-    /* object-fit: cover; */
-    /* background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    position: relative;
-    text-decoration: none; */ */
 }  
-  img.condo-home {
-    grid-area: condo-home;
-    height: 7em;
-    width: 10px;
+  .condo {
+    grid-area: condo;
+    max-width: 90vw;
+    height: 510px; 
     object-fit: cover;
   }
 
   .cosy-home {
     grid-area: cosy-home;
-    height: 7em;
     object-fit: cover;
-    
+    max-width: 30vw;
+    height: 510px; 
   }
 
   .cottage-home {
     grid-area: cottage-home;
-    height: 684px;
+    width: 30vw;
+    height: 510px; 
+    object-fit: cover;
+    }
+    
+
+  .country-house { 
+    grid-area: country-house;
+    width: 30vw;
+    height: 510px; 
     object-fit: cover;
     
-  }
+  }  
   
   .play-house {
     grid-area: play-house;
-    height: 450px;
+    max-width: 40vw;
+    height: 250px; 
     object-fit: cover;
     
   }
   
-  .country-home { 
-    grid-area: country-home;
-    object-fit: cover;
-    
-  }
 
   .pool-house {
     grid-area: pool-house;
-    height: 51.5rem;
+    max-width: 35vw;
+    height: 510px; 
     object-fit: cover;
 
   }
   
-  
   .white-house {
     grid-area: white-house;
-    background-color: black;;
-    height: 10em;
+    max-width: 90vw;
+    height: 250px; 
     object-fit: cover;
     
-  } */
+  } 
+ 
+
   
-  /* @media screen and (max-width: 768px) {
-    .grid-container { 
+  @media screen and (max-width: 900px) {
+    .grid-container {
       display: grid;
       grid-template-areas:
-      "header header header header"
-      "nav nav nav nav"
-      "main main main main"
-      "footer footer footer footer";
+      "condo condo cosy-home"
+      "cottage-home country-house country-house"
+      "cottage-home play-house play-house"
+      "pool-house white-house white-house"
+      "pool-house white-house white-house";
       grid-gap: 10px;
-    }
-    header {
-      grid-area: header;
-      background-color: black;
-      text-align: center;
-      height: 1fr 1fr;
-    }
-  
-    header,
-    nav,
-    main,
-    footer {
-      display: grid;
       justify-content: center;
-      align-items: center;
     }
     
-    nav {
-      grid-area: nav;
-      background-color: #FABC7D;
-      text-align: center;
+    .condo {
+      grid-area: condo;
+      max-width: 80vw;
+    }
+    .cosy-home {
+      grid-area: cosy-home;
+      max-width: 40vw;
+    }
+    .cottage-home {
+      grid-area: cottage-home;
+      max-width: 100vw;
+    }
+    .country-house {
+      grid-area: country-house;
+      max-width: 50vw;
+    }
+    .play-house {
+      grid-area: play-house;
+      max-width: 50vw;
+    }
+    .pool-house {
+      grid-area: pool-house;
+      max-width: 35vw;
+    }
+    .white-house {
+      grid-area: white-house;
+      max-width: 80vw;
+    }
+  }
+  
+  
+  @media screen and (max-width: 768px) {
+    .grid-container {
+      display: grid;
+      grid-template-areas:
+      "condo"
+      "cosy-home"
+      "cottage-home"
+      "country-house"
+      "play-house"
+      "pool-house"
+      "white-house";
+      grid-gap: 10px;
+      justify-content: center;
     }
     
-    main {
-      grid-area: main;
-      background-color: #d6d6d6;
-      text-align: center;
+    .condo {
+      grid-area: condo;
+      max-width: 100vw;
+    }
+    .cosy-home {
+      grid-area: cosy-home;
+      max-width: 100vw;
+    }
+    .cottage-home {
+      grid-area: cottage-home;
+      max-width: 100vw;
+    }
+    .country-house {
+      grid-area: country-house;
+      max-width: 100vw;
+    }
+    .play-house {
+      grid-area: play-house;
+      max-width: 100vw;
+    }
+    .pool-house {
+      grid-area: pool-house;
+      max-width: 100vw;
+    }
+    .white-house {
+      grid-area: white-house;
+      max-width: 100vw;
     }
     
-    aside {
-      display: none;
-    }
-    footer {
-      grid-area: footer;
-      background-color: black;
-      text-align: center;
-    }
-  } */ 
+  }
