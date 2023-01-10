@@ -11,6 +11,7 @@ import os
 def test_file_exists():
     assert os.path.exists('./code/adventure_game.py')
     assert os.path.exists('./test.log')
+    
 
 def test_file_contents():
     with open('./test.log', 'r') as f:
