@@ -30,3 +30,119 @@ be similar to pip 22.2.1.
 10. Create requirements.txt file and add requirements
 11. run: ```pip3 install -r requirements.txt```, to install requirements
 12. run: ```pytest -v -s```, to run tests on application
+
+#### Testing Challenges
+
+1. Add multiply and divide to the Calc class code along code with accompanying test assertions
+2. Add a test case that checks that when you divide by 0, you get back the string "Can't divide by 0".
+3. Modify your divide function so it also passes the new test case.
+
+```
+class TestCalculator:
+    def test_addition(self):
+        print("Test Calc Created for Addition Test")
+        calc = Calculator()
+        assert calc.add(5, 2) == 7
+        assert calc.add(2, 2) == 4
+        assert calc.add(15, 2) == 17
+        assert calc.add(9, 2) == 11
+        print("Test Completed for Addition Test")
+
+
+    def test_subtraction(self):
+        print("Test Calc Created for Subtraction Test")
+        calc = Calculator()
+        assert calc.subtract(5, 2) == 3
+        assert calc.subtract(10, 5) == 5 
+        assert calc.subtract(9, 3) == 6 
+        assert calc.subtract(6, 2) == 4   
+        print("Test Completed for Subtraction Test") 
+
+    def test_multiplication(self):
+        print("Test Calc Created for Multiplication Test")
+        calc = Calculator()
+        assert calc.multiply(2, 2) == 4
+        assert calc.multiply(3, 4) == 12 
+        assert calc.multiply(5, 5) == 25 
+        assert calc.multiply(7, 2) == 14   
+        print("Test Completed for Multiplication Test") 
+
+    def test_division(self):
+        print("Test Calc Created for Division Test")
+        calc = Calculator()
+        assert calc.divide(6, 2) == 3 
+        assert calc.divide(10, 5) == 2 
+        assert calc.divide(4, 2) == 2 
+        assert calc.divide(8, 2) == 4   
+        assert calc.divide(7, 0) == "Can't divide by 0"
+        print("Test Completed for Division Test")     
+
+class Calculator:
+    def add(self, a, b):
+        print("Addition Iteration Completed")
+        return a + b
+
+    def subtract(self, a, b):
+        print("Subtraction Iteration Completed")
+        return a - b    
+
+    def multiply(self, a, b):
+        print("Multiplication Iteration Completed")
+        return a * b   
+
+    def divide(self, a, b):
+        print("Division Iteration Completed")
+        try: 
+            return a / b
+        except ZeroDivisionError:
+            return "Can't divide by 0" 
+```            
+
+
+
+
+#### Adventure Game Testing
+
+```
+import sys
+sys.path.insert(1, './code')
+from adventure_game import intro_scene, choice_1
+from tud_test_base import set_keyboard_input, get_display_output
+import pytest
+import sqlite3
+import requests
+import os
+
+
+def test_file_exists():
+    assert os.path.exists('./code/adventure_game.py')
+    assert os.path.exists('./test.log')
+
+
+def test_file_contents():
+    with open('./test.log', 'r') as f:
+        contents = f.read()
+    assert "This is a Debug msg" in contents    
+
+
+def test_get_name():  
+    set_keyboard_input(["Val"]) 
+    intro_scene()
+    output = get_display_output()
+    assert output == ["What is your name adventurer: ", f"""
+                        ☠️☠️☠️ Val, you are lost on a deserted island! ☠️☠️☠️
+    """, """
+                Your airplane had an engine blow out and you crash landed on an island. 
+                You wake up washed ashore and realize you are alone, the only survivor, 
+                with only the clothes on your back and a desire to survive.
+    """]
+    assert set_keyboard_input != "", "You didn't key in any name"
+
+
+
+def test_directions():
+    set_keyboard_input(["North","South", "East", "West"])
+    choice_1()
+    output = get_display_output()
+    assert "What direction would you like to go? (North, South, East, or West): " in output
+```    

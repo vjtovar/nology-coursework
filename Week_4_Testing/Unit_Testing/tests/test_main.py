@@ -32,6 +32,8 @@
 
 
 # # 1. Add multiply and divide to the Calc class code along code with accompanying test assertions
+# # 2. Add a test case that checks that when you divide by 0, you get back the string "Can't divide by 0".
+# # 3. Modify your divide function so it also passes the new test case.
 # class TestCalculator:
 #     def test_addition(self):
 #         print("Test Calc Created for Addition Test")
@@ -61,15 +63,15 @@
 #         assert calc.multiply(7, 2) == 14   
 #         print("Test Completed for Multiplication Test") 
 
-    # def test_division(self):
-    #     print("Test Calc Created for Division Test")
-    #     calc = Calculator()
-    #     assert calc.divide(6, 2) == 3 
-    #     assert calc.divide(10, 5) == 2 
-    #     assert calc.divide(4, 2) == 2 
-    #     assert calc.divide(8, 2) == 4   
-    #     assert calc.divide(7, 0) == "Can't divide by 0"
-    #     print("Test Completed for Division Test")     
+#     def test_division(self):
+#         print("Test Calc Created for Division Test")
+#         calc = Calculator()
+#         assert calc.divide(6, 2) == 3 
+#         assert calc.divide(10, 5) == 2 
+#         assert calc.divide(4, 2) == 2 
+#         assert calc.divide(8, 2) == 4   
+#         assert calc.divide(7, 0) == "Can't divide by 0"
+#         print("Test Completed for Division Test")     
 
 # class Calculator:
 #     def add(self, a, b):
@@ -84,19 +86,15 @@
 #         print("Multiplication Iteration Completed")
 #         return a * b   
 
-    # def divide(self, a, b):
-    #     print("Division Iteration Completed")
-    #     try: 
-    #         return a / b
-    #     except ZeroDivisionError:
-    #         return "Can't divide by 0" 
+#     def divide(self, a, b):
+#         print("Division Iteration Completed")
+#         try: 
+#             return a / b
+#         except ZeroDivisionError:
+#             return "Can't divide by 0" 
         
      
-
-
-
-
-
+# # ZeroDivisionError
 # def test_division_by_zero():
 #     with pytest.raises(ZeroDivisionError, match="division by zero"): #expect zerodivision error, so passes
 #         division(10, 0)
@@ -105,19 +103,8 @@
 #     return a / b
 
 
-# 2. Add a test case that checks that when you divide by 0, you get back the string "Can't divide by 0".
-# 3. Modify your divide function so it also passes the new test case.
-# def test_division_by_zero():
-#     with pytest.raises(ZeroDivisionError): 
-#         assert division(10, 0) 
-#         # assert division(10, 2)
 
-# def division(a, b):
-#     print("Can't divide by zero")  
-#     return a / b
-     
-
-
+# # Testing files
 # def test_file_exists():
 #     assert os.path.exists('./static/file.txt')
 
