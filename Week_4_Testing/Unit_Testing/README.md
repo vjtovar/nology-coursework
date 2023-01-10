@@ -104,16 +104,6 @@ class Calculator:
 #### Adventure Game Testing
 
 ```
-import sys
-sys.path.insert(1, './code')
-from adventure_game import intro_scene, choice_1
-from tud_test_base import set_keyboard_input, get_display_output
-import pytest
-import sqlite3
-import requests
-import os
-
-
 def test_file_exists():
     assert os.path.exists('./code/adventure_game.py')
     assert os.path.exists('./test.log')
@@ -123,6 +113,7 @@ def test_file_contents():
     with open('./test.log', 'r') as f:
         contents = f.read()
     assert "This is a Debug msg" in contents    
+
 
 
 def test_get_name():  
