@@ -30,6 +30,10 @@ be similar to pip 22.2.1.
 10. Create requirements.txt file and add requirements
 11. run: ```pip3 install -r requirements.txt```, to install requirements
 12. run: ```pytest -v -s```, to run tests on application
+13. Add pytest-html to requirements.txt file
+14. run: ```pip3 install pytest-html```, to install pytest-html
+15. run: ```pytest --html=report.html```, this will add report.html file
+16. Open live server to see report of tests
 
 #### Testing Challenges
 

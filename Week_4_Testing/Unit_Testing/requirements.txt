@@ -5,3 +5,4 @@ pytest-flakes==2.0.0
 pytest-pep8
 pytest-pythonpath
 requests
+pytest-html
