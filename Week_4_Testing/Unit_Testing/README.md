@@ -141,3 +141,7 @@ def test_directions():
     output = get_display_output()
     assert "What direction would you like to go? (North, South, East, or West): " in output
 ```    
+
+![Screenshot 2023-01-10 at 2 45 39 PM](https://user-images.githubusercontent.com/104322947/211678800-8d4539a2-f6e6-45c4-b265-dcaba15c4515.png)
+
+
