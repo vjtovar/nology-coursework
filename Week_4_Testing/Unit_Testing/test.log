@@ -1,0 +1,4 @@
+2023-01-10 11:32:33,437 DEBUG    This is a Debug msg
+2023-01-10 11:32:33,437 INFO     This is a Info msg
+2023-01-10 11:32:33,437 WARNING  This is a Warning msg
+2023-01-10 11:32:33,437 ERROR    This is an Error msg
