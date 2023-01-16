@@ -26,14 +26,16 @@ be similar to pip 22.2.1.
 6. If pyenv version not 3.10.7, run: ```pyenv install 3.10.7```
 7. Change the local version to 3.10.7, run: ```pyenv local 3.10.7```
 8. run: ```pyenv local``` to check the version of pyenv
-9. Install pytest, run: ```pip3 install pytest```
-10. Create requirements.txt file and add requirements
-11. run: ```pip3 install -r requirements.txt```, to install requirements
-12. run: ```pytest -v -s```, to run tests on application
-13. Add pytest-html to requirements.txt file
-14. run: ```pip3 install pytest-html```, to install pytest-html
-15. run: ```pytest --html=report.html```, this will add report.html file
-16. Open live server to see report of tests
+
+### Pytest Installation
+1. Install pytest, run: ```pip3 install pytest```
+2. Create requirements.txt file and add requirements
+3. run: ```pip3 install -r requirements.txt```, to install requirements
+4. run: ```pytest -v -s```, to run tests on application
+5. Add pytest-html to requirements.txt file
+6. run: ```pip3 install pytest-html```, to install pytest-html
+7. run: ```pytest --html=report.html```, this will add report.html file
+8. Open live server to see report of tests
 
 #### Testing Challenges
 

@@ -26,13 +26,15 @@ be similar to pip 22.2.1.
 6. If pyenv version not 3.10.7, run: ```pyenv install 3.10.7```
 7. Change the local version to 3.10.7, run: ```pyenv local 3.10.7```
 8. run: ```pyenv local``` to check the version of pyenv
-9. Install flask, run: ```pip3 install flask```
-10. Create app.py and add imports
-11. run: ```export FLASK_APP=app.py```
-12. run: ```flask --debug run```, to start the server
-13. Create requirements.txt file and add flask, python-dotenv, psycopg2 to top of file
-14. run: ```pip3 install -r requirements.txt```, to install flask, python-dotenv, psycopg2
-15. run: ```flask --debug run``` or add FLASK_APP=app, FLASK_DEBUG=1 to .env file to automatically have debugger on. This starts the server
+
+### Flask Installation
+1. Install flask, run: ```pip3 install flask```
+2. Create app.py and add imports
+3. run: ```export FLASK_APP=app.py```
+4. run: ```flask --debug run```, to start the server
+5. Create requirements.txt file and add flask, python-dotenv, psycopg2 to top of file
+6. run: ```pip3 install -r requirements.txt```, to install flask, python-dotenv, psycopg2
+7. run: ```flask --debug run``` or add FLASK_APP=app, FLASK_DEBUG=1 to .env file to automatically have debugger on. This starts the server
 
 ## Notes for Postman and ElephantSQL
 Postman to add data, elephantsql to see data table

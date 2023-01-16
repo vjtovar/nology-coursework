@@ -1,0 +1,13 @@
+flask
+python-dotenv
+psycopg2
+
+coverage==4.5.2
+pytest
+pytest-cov==2.6.1
+pytest-flakes==2.0.0
+pytest-pep8
+pytest-pythonpath
+requests
+pytest-html
+pytest-flask

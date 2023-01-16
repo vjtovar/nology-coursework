@@ -1,8 +1,8 @@
 # import sys
 # sys.path.insert(1, './code')
 # from main import Point
-# import pytest
-# import sqlite3
+import pytest
+import sqlite3
 # import requests
 # import os
 
