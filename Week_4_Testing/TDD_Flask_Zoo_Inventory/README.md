@@ -77,6 +77,7 @@ As a developer, I want to be able to test that enclosures and animals can be cre
     • Test results: Pass
 
 ### Test Cases Executed
+```
 Test case: Verify connection to the database
     o Test result: Pass
     o Notes: Tested the database connection by creating sample data and checking the length of the sample data.
@@ -100,14 +101,34 @@ Test case: Verify http routes work
 Test Issues
     • One Issue
     Conclusion: Based on the results of the test cases executed, it can be concluded that the database relational tables are functioning as expected. One issue was encountered: The post routes are working, but tests are inserting data into the database.
-
+```    
 
 #### Post enclosures
 
+![Screenshot 2023-01-16 at 9 21 15 AM](https://user-images.githubusercontent.com/104322947/212749579-81b18b73-6a0b-4419-aac7-92ba5a2a1c72.png)
+
 #### Post animals
+
+![Screenshot 2023-01-16 at 9 36 51 AM](https://user-images.githubusercontent.com/104322947/212749619-c80c90fe-2cee-4fd6-af5c-a8a534391545.png)
 
 #### Get enclosures
 
+![Screenshot 2023-01-16 at 9 37 46 AM](https://user-images.githubusercontent.com/104322947/212749656-236aeca5-a8bd-46c7-8aad-d4ef1598ca40.png)
+
 #### Get animals
 
+![Screenshot 2023-01-16 at 9 38 25 AM](https://user-images.githubusercontent.com/104322947/212749676-0d73a9b0-18e4-45c6-b96d-9f57bfafec95.png)
+
+#### Enclosure Table
+
+![Screenshot 2023-01-16 at 9 57 20 AM](https://user-images.githubusercontent.com/104322947/212749778-a572ffba-eb29-45c2-a84e-256a08a48825.png)
+
+#### Animal Table
+
+![Screenshot 2023-01-16 at 9 56 54 AM](https://user-images.githubusercontent.com/104322947/212749832-f519d755-f6ca-4733-843c-6455b4842edb.png)
+
 #### Testing Report
+
+![Screenshot 2023-01-16 at 11 03 40 AM](https://user-images.githubusercontent.com/104322947/212750003-b74e4b1b-8621-4b4f-b1a0-71d2e4effc20.png)
+
+
