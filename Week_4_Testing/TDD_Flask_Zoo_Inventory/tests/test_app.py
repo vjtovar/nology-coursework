@@ -1,16 +1,9 @@
-import sys
 import pytest
-import requests
 import os
 import psycopg2
-import app
-from app import app, create_app 
-import json
-
-
+from app import app, create_app
 
 test_database = os.getenv("DATABASE_URL")
-
 
 @pytest.fixture
 def setup_database():
