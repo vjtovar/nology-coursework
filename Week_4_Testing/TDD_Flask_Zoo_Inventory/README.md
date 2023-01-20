@@ -45,15 +45,15 @@ be similar to pip 22.2.1.
 4. run: ```pytest -v -s```, to run tests on application
 5. Add pytest-html to requirements.txt file
 6. run: ```pip3 install pytest-html```, to install pytest-html
-7. run: ```pytest --html=report.html```, this will add report.html file
-8. Open live server to see report of tests
+7. run: ```pytest --html=report.html```, this will add report.html file. Open live server to see report of tests
+8. run: ```coverage run --omit 'env/*' -m pytest -v -s```, to omit environment from coverage results
+9. run: ```coverage report -m```, to get coverage results
+10. run: ```coverage html```, to generate htmlcov folder. Then open htmlcov/index.html with live server
 
 ### Requirements Gathering for TDD
-
 The purpose of testing this flask application is to test the functionality of the application. The scope of the tests will be to test the database connection to the application, test the data in the animals/enclosure table, test if files exist, and test the http routes. The input data that will be required for the tests will include data that will go into our animal table (id,  animal name, quantity of animals, enclosure id) and enclosure table (id, enclosure name). The output data will be the enclosure table and animal table. The results of our tests will have a final report. An assumption for testing is that mock data will need to be created since this project requires TDD. Some constraints are time availability and resource limitations. Some risks include test failures and the possibility of having dublicate entries in the tables.
 
 ### User Story
-
 As a developer, I want to run unit tests for the data in my flask application, so that issues can be identified and fixed before the application is deployed to production. 
 
 As a developer, I want to be able to test that enclosures and animals can be created and retrieved from the database and that the data is correct. 
@@ -67,7 +67,6 @@ As a developer, I want to be able to test that enclosures and animals can be cre
 6. Test content in files
 7. Test that the http routes work
 8. Test response status codes 
-
 
 ### Test Summary
     • Tested feature: Database Relational Tables
@@ -104,31 +103,27 @@ Test Issues
 ```    
 
 #### Post enclosures
-
 ![Screenshot 2023-01-16 at 9 21 15 AM](https://user-images.githubusercontent.com/104322947/212749579-81b18b73-6a0b-4419-aac7-92ba5a2a1c72.png)
 
 #### Post animals
-
 ![Screenshot 2023-01-16 at 9 36 51 AM](https://user-images.githubusercontent.com/104322947/212749619-c80c90fe-2cee-4fd6-af5c-a8a534391545.png)
 
 #### Get enclosures
-
 ![Screenshot 2023-01-16 at 9 37 46 AM](https://user-images.githubusercontent.com/104322947/212749656-236aeca5-a8bd-46c7-8aad-d4ef1598ca40.png)
 
 #### Get animals
-
 ![Screenshot 2023-01-16 at 9 38 25 AM](https://user-images.githubusercontent.com/104322947/212749676-0d73a9b0-18e4-45c6-b96d-9f57bfafec95.png)
 
 #### Enclosure Table
-
 ![Screenshot 2023-01-16 at 9 57 20 AM](https://user-images.githubusercontent.com/104322947/212749778-a572ffba-eb29-45c2-a84e-256a08a48825.png)
 
 #### Animal Table
-
 ![Screenshot 2023-01-16 at 9 56 54 AM](https://user-images.githubusercontent.com/104322947/212749832-f519d755-f6ca-4733-843c-6455b4842edb.png)
 
 #### Testing Report
-
 ![Screenshot 2023-01-16 at 11 03 40 AM](https://user-images.githubusercontent.com/104322947/212750003-b74e4b1b-8621-4b4f-b1a0-71d2e4effc20.png)
+
+#### Coverage Report
+
 
 

@@ -38,7 +38,6 @@ be similar to pip 22.2.1.
 8. Open live server to see report of tests
 
 #### Testing Challenges
-
 1. Add multiply and divide to the Calc class code along code with accompanying test assertions
 2. Add a test case that checks that when you divide by 0, you get back the string "Can't divide by 0".
 3. Modify your divide function so it also passes the new test case.
@@ -105,8 +104,6 @@ class Calculator:
 ```            
 
 
-
-
 #### Adventure Game Testing
 
 ```
@@ -144,6 +141,7 @@ def test_directions():
     assert "What direction would you like to go? (North, South, East, or West): " in output
 ```    
 
+#### Adventure Game Test Report
 ![Screenshot 2023-01-10 at 2 45 39 PM](https://user-images.githubusercontent.com/104322947/211678800-8d4539a2-f6e6-45c4-b265-dcaba15c4515.png)
 
 
