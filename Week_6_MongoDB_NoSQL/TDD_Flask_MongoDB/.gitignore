@@ -7,3 +7,4 @@ pytest.ini
 .coverage
 config.py
 test_plugin.py
+.python-version
