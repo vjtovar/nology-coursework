@@ -1,1 +1,0 @@
-mongopass = 'mongodb+srv://vjtovar:Kodi2823$@cluster0.9ektqzn.mongodb.net/?retryWrites=true&w=majority'
