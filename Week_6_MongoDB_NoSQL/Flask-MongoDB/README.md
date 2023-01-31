@@ -12,7 +12,7 @@ Unit Testing using TDD before creating a Flask app with and API generated using 
 4. Install flask
 5. Install pytest
 6. Use pytest for TDD unit testing 
-7. Once tests pass create database and create queries
+7. Once tests pass create database 
 
 ### Python Installation 
 1. Python3 - Download the latest version of python from the python site. run: ```brew install python3```. This should also install pip3. To check Python version, run: ```python3 --version```.
