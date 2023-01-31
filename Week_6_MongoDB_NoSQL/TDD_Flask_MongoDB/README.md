@@ -123,26 +123,25 @@ Test Issues
 ```    
 
 #### Get parts
-
+<img width="505" alt="Screenshot 2023-01-29 at 6 07 59 PM" src="https://user-images.githubusercontent.com/104322947/215627757-52b4ce79-14e5-45fe-b8ed-91f63c0b200e.png">
 
 #### Get part by ID
-
+<img width="453" alt="Screenshot 2023-01-29 at 6 10 07 PM" src="https://user-images.githubusercontent.com/104322947/215627801-dcb089d7-bf30-4f4d-8eff-c523e1cede27.png">
 
 #### Post parts
-
+<img width="615" alt="Screenshot 2023-01-29 at 6 13 58 PM" src="https://user-images.githubusercontent.com/104322947/215627839-c9c4ded5-5ad2-4335-8b20-a68dfbe20bad.png">
 
 #### Update parts
-
+<img width="625" alt="Screenshot 2023-01-29 at 6 19 08 PM" src="https://user-images.githubusercontent.com/104322947/215627858-7c36b52f-6887-4177-ac57-25cabdb00178.png">
 
 #### Delete parts
-
-
+<img width="487" alt="Screenshot 2023-01-29 at 6 20 49 PM" src="https://user-images.githubusercontent.com/104322947/215627880-d5704ad3-c704-4cdd-a366-52f9e6d51d56.png">
 
 #### Testing Report
-
+![Screenshot 2023-01-30 at 4 04 50 PM](https://user-images.githubusercontent.com/104322947/215627928-0900fd81-6b5d-4d8f-89f2-255a22090541.png)
 
 #### Coverage Report
-
+![Screenshot 2023-01-30 at 4 04 10 PM](https://user-images.githubusercontent.com/104322947/215627909-aff7c9d2-d4d9-4b88-bf5a-428042505558.png)
 
 
 
