@@ -40,7 +40,7 @@ git push -u origin main
 13. Create Jenkins account
 14. Click on new item, enter item name VALERIE-TOVAR-CI, click freestyle project, click ok
 15. In General section; GitHub project url: enter SSH repo, restrict where project can be run: NodeJS, source code management: click git and paste github SSH repo, credentials: type Jenkins, click Jenkins, click ok
-16. Jenkins credential provider will popup, domain: global credentials(unrestricted) kind: SSH username with private key, scope: Global (Jenkins, nodes, items, all child items, etc), ID: VT-JK, description: Key Pair to Acess GH-VT, username: VT, copy and paste Jenkins private key into text box and click ok, from credentials dropdown select your key: VT-JK (Key Pair to Acess GH-VT), then save.
+16. Jenkins credential provider will popup, domain: global credentials(unrestricted) kind: SSH username with private key, scope: Global (Jenkins, nodes, items, all child items, etc), ID: VT-JK, description: Key Pair to Acess GH-VT, username: VT, copy and paste Jenkins private key into text box and click ok, from credentials dropdown select your key: VT-JK (Key Pair to Acess GH-VT), then save. Will see error message: Failed to connect to repository : Error performing git command: git ls-remote -h git@github.com:vjtovar/ASML_NologyBot_Team2.git HEAD. It is ok for now.
 
 ### Jenkins Setup (Day 2) 
 1. Go into app repo settings, click on deploy key, click on add new.
