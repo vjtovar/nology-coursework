@@ -52,7 +52,7 @@ git push -u origin main
 ```npm install```
 ```npm run test```
 6. In Jenkins test the connection, go to build now, at the bottom looks like connecting. Click on the #2, check the console output, make sure there are no errors.
-7. To setup webhooks to trigger something to happen go to the github repo, go to settings, go to webhooks, click add webhooks, payload url is the jenkins website url with the 8080 then add /github-webhook/ to the end of it (ex: http://#.###.###.###:8080/github-webhook/). Make sure "just the push event" and "active" are both checked, then click add webhook.
+7. To setup webhooks to trigger something to happen go to the github repo, go to settings, go to webhooks, click add webhooks, payload url is the jenkins website url with the 8080 then add /github-webhook/ to the end of it (ex: http://#.###.###.###:8080/github-webhook/), content type: application/json. Make sure "just the push event" and "active" are both checked, then click add webhook.
 8. Go to the Jenkins website, go to configure, scroll down to build triggers, click on GitHub hook trigger for GITScm polling?
 9. Go to the app on vs code, make a change like add a comment in index.js, then push to github.
 10. In the repo github webhooks make sure there is a green check mark next to the webhook. In Jenkins should see a green check mark for the #3 build, then when go to console output it should say github push by vjtovar.
